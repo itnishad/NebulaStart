@@ -3,6 +3,7 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import jest from 'eslint-plugin-jest';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 
 export default tseslint.config(
     {
@@ -18,4 +19,5 @@ export default tseslint.config(
           'jest/prefer-expect-assertions': 'off',
         },
     },
+    eslintPluginPrettierRecommended
 );

@@ -1,11 +1,28 @@
 {
     "compilerOptions": {
-        "module": "ESNext",
-        "target": "es2016",
-        "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
-        "strict": true,
+
+        // Base Option
+        "esModuleInterop": true,
         "skipLibCheck": true,
-        "outDir": "dist"
+        "target": "ES2022",
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "moduleDetection": "force",
+        "isolatedModules": true,
+        "verbatimModuleSyntax": true,
+
+        /* Strictness */
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+
+        /* If transpiling with TypeScript: */
+        "module": "NodeNext",
+        "outDir": "dist",
+        "sourceMap": true,
+
+        /* If your code doesn't run in the DOM: */
+        "lib": ["es2022"]
     }
 }

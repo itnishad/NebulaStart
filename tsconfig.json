@@ -10,7 +10,7 @@
         "resolveJsonModule": true,
         "moduleDetection": "force",
         "isolatedModules": true,
-        "verbatimModuleSyntax": true,
+        // "verbatimModuleSyntax": true,
 
         /* Strictness */
         "strict": true,
@@ -18,11 +18,18 @@
         "noImplicitOverride": true,
 
         /* If transpiling with TypeScript: */
-        "module": "NodeNext",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
         "outDir": "dist",
         "sourceMap": true,
 
         /* If your code doesn't run in the DOM: */
-        "lib": ["es2022"]
-    }
+        "lib": ["es2022"],
+
+        /* Path setup */
+        "baseUrl": "./"
+    },
+    
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules", "**/node_modules/*", "./test/**/*"]
 }
